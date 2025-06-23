@@ -1,4 +1,3 @@
-    // Lista de platos para el plato del día
     const dishes = [
         {
             name: "Ropa Vieja",
@@ -37,14 +36,12 @@
         }
     ];
     
-    // Función para seleccionar un plato diferente cada día
     function getDailyDish() {
         const today = new Date().getDate(); // Día del mes (1-31)
         const dishIndex = today % dishes.length;
         return dishes[dishIndex];
     }
     
-    // Mostrar el plato del día
     document.addEventListener('DOMContentLoaded', function() {
         const dailyDish = getDailyDish();
         const dailyDishElement = document.getElementById('daily-dish');

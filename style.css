@@ -1,4 +1,3 @@
- /* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,7 @@ body {
         padding: 0 20px;
     }
     
-    /* Header */
+
     header {
         background-color: #fff;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -80,7 +79,6 @@ body {
         color: #ddd;
     }
     
-    /* Menú Hamburguesa */
     .hamburger {
         display: none;
         cursor: pointer;
@@ -142,7 +140,6 @@ body {
         padding-top: 10px;
     }
 
-    /* main Section */
     .main {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/depositphotos_10213434-stock-illustration-cuban-flag.jpg);
         background-size: cover;
@@ -156,7 +153,6 @@ body {
     }
     
     .main-content h1 {
-        /* background-color:#00000044; */
         font-size: 60px;
         margin-bottom: 20px;
         text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
@@ -164,7 +160,6 @@ body {
     }
     
     .main-content p {
-        /* background-color:#00000044; */
         font-size: 20px;
         margin-bottom: 30px;
         max-width: 700px;
@@ -186,7 +181,7 @@ body {
         background-color: #D82E21;
         color: white;
         padding: 12px 30px;
-        border-radius: 4px;
+        border-radius: 30px;
         text-decoration: none;
         font-weight: 600;
         transition: all 0.3s;
@@ -197,7 +192,7 @@ body {
     .btn-outline {
         background-color: transparent;
         border: 2px solid white;
-        border-radius: 4px;
+        border-radius: 30px;
     }
     
     .btn:hover {
@@ -211,7 +206,6 @@ body {
         border-color: transparent;
     }
     
-    /* About Section */
     .about {
         padding: 100px 0;
         background-color: white;
@@ -291,7 +285,7 @@ body {
         display: block;
     }
     
-       /* Menu Section */
+    
     .menu {
         padding: 100px 0;
         background-color: #f8f8f8;
@@ -352,7 +346,7 @@ body {
         color: #D82E21;
     }
     
-    /* Gallery Section */
+    
     .gallery {
         padding: 100px 0;
         background-color: white;
@@ -394,7 +388,6 @@ body {
         transform: scale(1.1);
     }
     
-    /* Contact Section */
     .contact {
         padding: 100px 0;
         background-color: #f8f8f8;
@@ -475,7 +468,6 @@ body {
         height: 150px;
     }
     
-    /* Footer */
     footer {
         background-color: #0056A3;
         color: white;
