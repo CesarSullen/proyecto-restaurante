@@ -37,7 +37,7 @@
     ];
     
     function getDailyDish() {
-        const today = new Date().getDate(); // Día del mes (1-31)
+        const today = new Date().getDate(); 
         const dishIndex = today % dishes.length;
         return dishes[dishIndex];
     }
