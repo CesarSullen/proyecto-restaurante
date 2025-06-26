@@ -20,7 +20,7 @@ body {
     
     /* Header */
     header {
-        background-color: #fff;
+        background-color: #D82E21;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         position: fixed;
         width: 100%;
@@ -29,7 +29,7 @@ body {
     }
     
     header.scrolled {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: #D82E21;
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         padding: 10px 0;
 
@@ -42,19 +42,25 @@ body {
         padding: 20px 0;
         transition: all 0.3s ease;
     }
-    
+
     .logo {
+        display: flex;
+        align-items: center;
+    }
+            
+    .logo img {
+        height: 60px;
+        margin-right: 15px;
+        padding-left: 10px;
+    }
+
+    .logo-text{
         font-size: 28px;
         font-weight: 700;
-        color: #D82E21;
+        color: #ececec;
         transition: all 0.3s ease;
-        z-index: 101;
     }
-    
-    .logo span {
-        color: #0056A3;
-    }
-    
+          
     nav ul {
         display: flex;
         list-style: none;
@@ -66,7 +72,7 @@ body {
     
     nav ul li a {
         text-decoration: none;
-        color: #333;
+        color: #ececec;
         font-weight: 600;
         transition: color 0.3s;
         font-size: 1.1rem;
@@ -76,8 +82,8 @@ body {
     }
     
     nav ul li a:hover {
-        background-color: rgba(32, 19, 221, 0.947);
-        color: #ddd;
+        background-color: #ececec;
+        color: #333;
     }
     
     /* Menú Hamburguesa */
@@ -96,7 +102,7 @@ body {
         position: absolute;
         height: 3px;
         width: 100%;
-        background: #D82E21;
+        background: #ececec;
         border-radius: 3px;
         opacity: 1;
         left: 0;
@@ -226,7 +232,7 @@ body {
     
     .section-title h2 {
         font-size: 36px;
-        color: #0056A3;
+        color: #D82E21;
     }
     
     .section-title p {
@@ -331,7 +337,7 @@ body {
     .menu-item-content h3 {
         font-size: 22px;
         margin-bottom: 10px;
-        color: #0056A3;
+        color: #D82E21;
     }
     
     .menu-item-content p {
@@ -397,6 +403,7 @@ body {
     .contact-container {
         display: flex;
         gap: 50px;
+        margin-left: 40%;
     }
     
     .contact-info {
@@ -414,7 +421,7 @@ body {
     .contact-info h3 {
         font-size: 24px;
         margin-bottom: 20px;
-        color: #0056A3;
+        color: #D82E21;
     }
     
     .info-item {
@@ -429,49 +436,59 @@ body {
         margin-right: 15px;
         margin-top: 5px;
     }
-    
-    .contact-form {
-        flex: 1;
+
+    /* Metodos de pago */
+    .payment-methods {
+        padding: 80px 0;
         background-color: white;
-        padding: 30px;
-        border-radius: 4px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        opacity: 0;
-        transform: translateX(50px);
-        transition: all 0.8s ease;
     }
     
-    .contact-form.animated {
-        opacity: 1;
-        transform: translateX(0);
+    .payment-methods .container {
+        max-width: 800px;
+        height: 300px;
     }
     
-    .form-group {
-        margin-bottom: 20px;
+    .payment-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
     }
     
-    .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
+    .payment-icon {
+        width: 100px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
     }
     
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 16px;
+    .payment-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        filter: grayscale(30%);
+        transition: filter 0.3s;
     }
     
-    .form-group textarea {
-        height: 150px;
+    .payment-icon:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
+    
+    .payment-icon:hover img {
+        filter: grayscale(0%);
+    }
+      
     
     /* Footer */
     footer {
-        background-color: #0056A3;
+        background-color: #D82E21;
         color: white;
         padding: 50px 0 20px;
     }
@@ -618,10 +635,20 @@ body {
             
         .contact-container {
             flex-direction: column;
+            margin-left: 20%;
         }
             
         .menu-items {
             grid-template-columns: 1fr;
+        }
+
+        .payment-icons {
+            gap: 15px;
+        }
+        
+        .payment-icon {
+            width: 80px;
+            height: 65px;
         }
     }
 
@@ -645,6 +672,7 @@ body {
         
         nav.active {
             right: 0;
+            background-color: #D82E21;;
         }
         
         nav ul {
@@ -692,9 +720,7 @@ body {
         }
         
         .gallery-item {
-            width: 80%;
-            max-width: 300px;
-            transform-origin: center;
+            width: 90%;
             transform: rotate(-5deg) translateX(-20px);
             z-index: 1;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.3);

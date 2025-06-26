@@ -10,7 +10,9 @@
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <div class="logo">Sabor <span>Cubano</span>
+            <div class="logo">
+                <img src="imagenes/LOGO3.jpg" alt="Logo" id="logo">
+                <p class="logo-text">Sabor Cubano</p>
             </div>
 
             <div class="hamburger">
@@ -41,28 +43,6 @@
                     <a href="tel:+13051234567" class="btn btn-outline btn-2">Llámenos Ya</a>
                 </div>
             </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="nosotros">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestra Historia</h2>
-                <p>Conoce más sobre nuestra pasión por la cocina cubana y nuestra dedicación a ofrecer una experiencia culinaria auténtica.</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Sabores que cuentan historias</h3>                
-                <p>Fundado en 2010 por la familia Martínez, emigrantes cubanos con décadas de experiencia culinaria, nuestro restaurante nació con el sueño de compartir los sabores auténticos de la isla con nuestra nueva comunidad.</p>
-                <p>Nuestros chefs utilizan recetas transmitidas de generación en generación, combinando técnicas tradicionales con ingredientes frescos y de la más alta calidad. Cada plato que servimos está preparado con el mismo amor y dedicación que pondríamos en nuestra propia mesa familiar.</p>
-                <p>En Sabor Cubano no solo servimos comida, creamos experiencias que transportan a nuestros clientes a las calles de La Habana, con sus colores, aromas y, por supuesto, su incomparable sabor.</p>
-                <p>¡Ven y déjanos compartir contigo el verdadero sabor de Cuba!</p>
-                </div>
-                <div class="about-image">
-                    <img src="imagenes/about.jpg" alt="Chef preparando comida cubana">
-                </div>
-            </div>
-        </div>
     </section>
 
         <!-- Menú -->
@@ -130,6 +110,26 @@
                             <h3>Mojito</h3>
                             <p>Es un cóctel popular compuesto de ron, limón, azúcar, menta y agua mineral con gas.</p>
                             <div class="price">$8.99</div>
+                        </div>
+                    </div>
+        
+                    <!-- Item 7 -->
+                    <div class="menu-item">
+                        <img src="imagenes/ajiaco.jpg" alt="Ajiaco">
+                        <div class="menu-item-content">
+                            <h3>Ajiaco</h3>
+                            <p>Guiso tradicional cubano, perfevto para una comida reconfortantes. Se prepara con cerdo, res, pollo, maíz, calabaza y tubérculos como yuca, malanga, boniato, además de especies aromáticas</p>
+                            <div class="price">$9.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="menu-item">
+                        <img src="imagenes/arroz huevo frito.jpg" alt="Arroz huevo">
+                        <div class="menu-item-content">
+                            <h3>Arroz con huevo frito</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <div class="price">$24.99</div>
                         </div>
                     </div>
                 </div>
@@ -200,27 +200,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Envíanos un Mensaje</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensaje</button>
-                    </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Historia</h2>
+                <p>Conoce más sobre nuestra pasión por la cocina cubana y nuestra dedicación a ofrecer una experiencia culinaria auténtica.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sabores que cuentan historias</h3>                
+                <p>Fundado en 2010 por la familia Martínez, emigrantes cubanos con décadas de experiencia culinaria, nuestro restaurante nació con el sueño de compartir los sabores auténticos de la isla con nuestra nueva comunidad.</p>
+                <p>Nuestros chefs utilizan recetas transmitidas de generación en generación, combinando técnicas tradicionales con ingredientes frescos y de la más alta calidad. Cada plato que servimos está preparado con el mismo amor y dedicación que pondríamos en nuestra propia mesa familiar.</p>
+                <p>En Sabor Cubano no solo servimos comida, creamos experiencias que transportan a nuestros clientes a las calles de La Habana, con sus colores, aromas y, por supuesto, su incomparable sabor.</p>
+                <p>¡Ven y déjanos compartir contigo el verdadero sabor de Cuba!</p>
+                </div>
+                <div class="about-image">
+                    <img src="imagenes/about.jpg" alt="Chef preparando comida cubana">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-methods">
+        <div class="container">
+            <div class="section-title">
+                <h2>Métodos de Pago</h2>
+                <p>Aceptamos diversas formas de pago para tu comodidad</p>
+            </div>
+            <div class="payment-icons">
+                <div class="payment-icon">
+                    <img src="imagenes/gratis-png-visa-logo-tarjeta-de-credito-e-commerce-visa-mastercard-visa.png" alt="Visa">
+                </div>
+                <div class="payment-icon">
+                    <img src="imagenes/mastercard-4-logo-png-transparent.png" alt="Mastercard">
+                </div>
+                <div class="payment-icon">
+                    <img src="imagenes/paypal-logo-dark-monochrome-icon-symbol-black-lettermark-modern-design-1.png" alt="PayPal">
+                </div>
+                <div class="payment-icon">
+                    <img src="imagenes/zelle-black-logo-png-701751694713231upvetmtmhi.png" alt="Zelle">
                 </div>
             </div>
         </div>
@@ -253,16 +276,6 @@
                     <p>Lunes - Viernes: 11am - 10pm</p>
                     <p>Sábado - Domingo: 10am - 11pm</p>
                     <p>Abierto todos los días festivos</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Noticias</h3>
-                    <p>Suscríbete para recibir noticias y promociones especiales.</p>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" placeholder="Tu email" required>
-                        </div>
-                        <button type="submit" class="btn">Suscribirse</button>
-                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
