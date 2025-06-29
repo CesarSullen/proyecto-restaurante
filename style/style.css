@@ -1,3 +1,12 @@
+/* Variables Saru */
+:root {
+	--primary-color: #d82e21;
+	--secondary-color: #373b45;
+	--light-color: #ececec;
+	--dark-color: #212127;
+	--gray-color: var(--gray-color);
+}
+
 /* Estilos generales */
 * {
 	margin: 0;
@@ -8,8 +17,8 @@
 }
 
 body {
-	background-color: #f8f8f8;
-	color: #333;
+	background-color: var(--dark-color);
+	color: var(--light-color);
 	overflow-x: hidden;
 }
 
@@ -21,7 +30,7 @@ body {
 
 /* Header */
 header {
-	background-color: #d82e21;
+	background-color: var(--primary-color);
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	position: fixed;
 	width: 100%;
@@ -50,7 +59,7 @@ header {
 .logo-text {
 	font-size: 1.6rem;
 	font-weight: 700;
-	color: #ececec;
+	color: var(--light-color);
 }
 
 nav ul {
@@ -64,7 +73,7 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	color: #ececec;
+	color: var(--light-color);
 	font-weight: 600;
 	font-size: 1.1rem;
 	display: block;
@@ -73,7 +82,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #333;
+	color: var(--secondary-color);
 }
 
 /* Menú Hamburguesa */
@@ -91,7 +100,7 @@ nav ul li a:hover {
 	position: absolute;
 	height: 3px;
 	width: 100%;
-	background: #ececec;
+	background: var(--light-color);
 	border-radius: 3px;
 	opacity: 1;
 	left: 0;
@@ -141,7 +150,7 @@ nav ul li a:hover {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	color: white;
+	color: var(--light-color);
 	padding-top: 80px;
 }
 
@@ -180,8 +189,8 @@ a:has(.btn) {
 
 .btn {
 	display: inline-block;
-	background-color: #d82e21;
-	color: white;
+	background-color: var(--primary-color);
+	color: var(--light-color);
 	padding: 12px 30px;
 	border-radius: 30px;
 	text-decoration: none;
@@ -195,12 +204,12 @@ a:has(.btn) {
 
 .btn-outline {
 	background-color: transparent;
-	border: 2px solid white;
+	border: 2px solid var(--light-color);
 	border-radius: 30px;
 }
 
 .btn:hover {
-	background-color: #b82419;
+	background-color: var(--primary-color);
 	transform: translateY(-3px);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -213,7 +222,7 @@ a:has(.btn) {
 /* About Section */
 .about {
 	padding: 100px 0;
-	background-color: white;
+	background-color: var(--dark-color);
 }
 
 .section-title {
@@ -230,11 +239,11 @@ a:has(.btn) {
 
 .section-title h2 {
 	font-size: 36px;
-	color: #d82e21;
+	color: var(--primary-color);
 }
 
 .section-title p {
-	color: #777;
+	color: var(--gray-color);
 	max-width: 700px;
 	margin: 15px auto 0;
 }
@@ -259,7 +268,7 @@ a:has(.btn) {
 .about-text h3 {
 	font-size: 28px;
 	margin-bottom: 20px;
-	color: #333;
+	color: var(--primary-color);
 }
 
 .about-text p {
@@ -290,7 +299,7 @@ a:has(.btn) {
 /* Menu Section */
 .menu {
 	padding: 100px 0;
-	background-color: #f8f8f8;
+	background-color: var(--dark-color); /* Saru */
 }
 
 .menu-items {
@@ -301,10 +310,9 @@ a:has(.btn) {
 }
 
 .menu-item {
-	background-color: white;
+	background-color: var(--secondary-color); /* Saru */
 	border-radius: 10px;
 	overflow: hidden;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Saru */
 	opacity: 0;
 	transform: translateY(50px);
 }
@@ -331,11 +339,11 @@ a:has(.btn) {
 .menu-item-content h3 {
 	font-size: 22px;
 	margin-bottom: 10px;
-	color: #d82e21;
+	color: var(--primary-color);
 }
 
 .menu-item-content p {
-	color: #777;
+	color: var(--gray-color);
 	margin-bottom: 15px;
 	line-height: 1.5;
 }
@@ -343,13 +351,13 @@ a:has(.btn) {
 .price {
 	font-size: 20px;
 	font-weight: 700;
-	color: #d82e21;
+	color: var(--primary-color);
 }
 
 /* Gallery Section */
 .gallery {
 	padding: 100px 0;
-	background-color: white;
+	background-color: var(--secondary-color);
 	overflow: hidden;
 }
 
@@ -388,7 +396,7 @@ a:has(.btn) {
 
 /* Featured Section Saru*/
 .house-specials {
-	background-color: #fff8f2;
+	background-color: var(--dark-color);
 	padding: 80px 20px;
 }
 
@@ -400,13 +408,13 @@ a:has(.btn) {
 
 .specials-title {
 	font-size: 2.5rem;
-	color: #d82e21;
+	color: var(--primary-color);
 	margin-bottom: 10px;
 }
 
 .specials-subtitle {
 	font-size: 1.1rem;
-	color: #777;
+	color: var(--gray-color);
 }
 
 .specials-grid {
@@ -420,13 +428,29 @@ a:has(.btn) {
 .special-card {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff;
+	background-color: var(--secondary-color);
 	border-radius: 10px;
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.232);
 	overflow: hidden;
-	transition: transform 0.3s ease;
 	opacity: 0;
 	transform: scale(0);
+	position: relative;
+	width: 100%;
+	aspect-ratio: 5/4;
+}
+
+.special-card::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to bottom,
+		#000000a7 15%,
+		#ffffff00 50%,
+		#000000a7 85%
+	);
+	z-index: 1;
 }
 
 .special-card.animated {
@@ -436,35 +460,53 @@ a:has(.btn) {
 
 .special-card:hover {
 	transform: translateY(-4px);
+	background: var(--primary-color);
+}
+
+.special-card:hover .special-img,
+.special-card:hover .special-name,
+.special-card:hover .special-price {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.special-card:hover .special-desc {
+	opacity: 1;
 }
 
 .special-img {
 	width: 100%;
-	height: 220px;
+	aspect-ratio: 1;
 	object-fit: cover;
-}
-
-.special-content {
-	padding: 20px 25px;
+	object-position: center;
 }
 
 .special-name {
-	font-size: 1.6rem;
-	margin-bottom: 10px;
-	color: #d82e21;
+	font-size: 2rem;
+	color: var(--primary-color);
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	z-index: 2;
 }
 
 .special-desc {
-	font-size: 1rem;
-	color: #4b4b4b;
-	line-height: 1.6;
-	margin-bottom: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 2rem;
+	font-weight: bold;
+	opacity: 0;
+	font-size: 1.1rem;
 }
 
 .special-price {
-	font-size: 1.1rem;
-	color: #d82e21;
+	font-size: 1.8rem;
+	color: var(--primary-color);
 	font-weight: bold;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	z-index: 2;
 }
 
 /* DESKTOP */
@@ -474,26 +516,12 @@ a:has(.btn) {
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
 	}
-
-	.special-card {
-		flex-direction: row;
-		height: 220px;
-	}
-
-	.special-img {
-		width: 220px;
-		height: 100%;
-	}
-
-	.special-content {
-		padding: 25px 30px;
-	}
 }
 
 /* Contact Section */
 .contact {
 	padding: 100px 0;
-	background-color: #f8f8f8;
+	background-color: var(--secondary-color);
 }
 
 .contact-container {
@@ -542,7 +570,7 @@ a:has(.btn) {
 /* Metodos de pago */
 .payment-methods {
 	padding: 80px 0;
-	background-color: white;
+	background-color: var(--secondary-color);
 }
 
 .payment-methods .container {
@@ -564,7 +592,7 @@ a:has(.btn) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f8f8f8;
+	background-color: var(--light-color);
 	border-radius: 8px;
 	padding: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -587,8 +615,8 @@ a:has(.btn) {
 
 /* Footer */
 footer {
-	background-color: #d82e21;
-	color: white;
+	background-color: var(--primary-color);
+	color: var(--light-color);
 	padding: 50px 0 20px;
 }
 
@@ -623,7 +651,7 @@ footer {
 	bottom: 0;
 	width: 50px;
 	height: 2px;
-	background-color: #d82e21;
+	background-color: var(--primary-color);
 }
 
 .footer-col p {
@@ -638,7 +666,7 @@ footer {
 
 .footer-link a {
 	text-decoration: none;
-	color: #ddd;
+	color: var(--light-color);
 }
 
 .social-links {
@@ -753,7 +781,6 @@ footer {
 		width: 80%;
 		max-width: 300px;
 		height: 100vh;
-		background-color: #fff;
 		box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
 		padding-top: 80px;
 		z-index: 100;
@@ -761,7 +788,7 @@ footer {
 
 	nav.active {
 		right: 0;
-		background-color: #d82e21;
+		background-color: var(--dark-color);
 	}
 
 	nav ul {
