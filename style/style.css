@@ -248,7 +248,6 @@ a:has(.btn) {
 
 /* About Section */
 .about {
-	padding: 1rem;
 	background-color: var(--dark-color);
 }
 
@@ -516,7 +515,6 @@ a:has(.btn) {
 
 /* Contact Section */
 .contact {
-	padding: 1rem;
 	background-color: var(--secondary-color);
 }
 
@@ -566,18 +564,19 @@ a:has(.btn) {
 /* Metodos de pago */
 .payment-methods {
 	background-color: var(--secondary-color);
+	display: flex;
+	padding-bottom: 2rem;
 }
 
 .payment-methods .container {
-	max-width: 800px;
-	height: 300px;
+	padding: 0;
 }
-
 .payment-icons {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
+	padding-inline: 1rem;
 }
 
 .payment-icon {
